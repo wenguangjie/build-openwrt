@@ -98,9 +98,9 @@ CONFIG_TARGET_ramips_mt7620=y
 # CONFIG_TARGET_ramips_mt7620_DEVICE_glinet_gl-mt300n is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_glinet_gl-mt750 is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_head-weblink_hdrm200 is not set
-# CONFIG_TARGET_ramips_mt7620_DEVICE_hiwifi_hc5661 is not set
+CONFIG_TARGET_ramips_mt7620_DEVICE_hiwifi_hc5661=y
 # CONFIG_TARGET_ramips_mt7620_DEVICE_hiwifi_hc5761 is not set
-CONFIG_TARGET_ramips_mt7620_DEVICE_hiwifi_hc5861=y
+# CONFIG_TARGET_ramips_mt7620_DEVICE_hiwifi_hc5861 is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_hiwifi_r33 is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_hnet_c108 is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_hootoo_ht-tm05 is not set
@@ -180,7 +180,7 @@ CONFIG_HAS_SUBTARGETS=y
 CONFIG_HAS_DEVICES=y
 CONFIG_TARGET_BOARD="ramips"
 CONFIG_TARGET_SUBTARGET="mt7620"
-CONFIG_TARGET_PROFILE="DEVICE_hiwifi_hc5861"
+CONFIG_TARGET_PROFILE="DEVICE_hiwifi_hc5661"
 CONFIG_TARGET_ARCH_PACKAGES="mipsel_24kc"
 CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc"
 CONFIG_CPU_TYPE="24kc"
@@ -208,15 +208,11 @@ CONFIG_DEFAULT_iwinfo=y
 CONFIG_DEFAULT_kmod-gpio-button-hotplug=y
 CONFIG_DEFAULT_kmod-ipt-raw=y
 CONFIG_DEFAULT_kmod-leds-gpio=y
-CONFIG_DEFAULT_kmod-mt76x2=y
 CONFIG_DEFAULT_kmod-nf-nathelper=y
 CONFIG_DEFAULT_kmod-nf-nathelper-extra=y
 CONFIG_DEFAULT_kmod-rt2800-soc=y
 CONFIG_DEFAULT_kmod-sdhci-mt7620=y
 CONFIG_DEFAULT_kmod-tun=y
-CONFIG_DEFAULT_kmod-usb-ledtrig-usbport=y
-CONFIG_DEFAULT_kmod-usb-ohci=y
-CONFIG_DEFAULT_kmod-usb2=y
 CONFIG_DEFAULT_libc=y
 CONFIG_DEFAULT_libgcc=y
 CONFIG_DEFAULT_libustream-openssl=y
